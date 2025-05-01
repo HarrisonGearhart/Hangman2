@@ -13,7 +13,9 @@
     }
   
   .container {
-    background-image: url(images/passport.jpg);
+    background: linear-gradient(135deg, #1100ff, #00ff88, #0095ff, #00e73a);
+      background-size: 400% 400%;
+      animation: gradientMove 20s ease infinite;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
