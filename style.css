@@ -63,7 +63,7 @@
     
   }
   #options-container button:disabled {
-    border: 3px solid #808080;
+    border: 3px solid lightblue;
     color: #808080;
     background-color: #efefef;
   }
