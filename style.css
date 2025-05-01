@@ -6,9 +6,9 @@
   
 body {
     height: 100vh;
-    animation: gradientMove 20s ease infinite;
-    background: radial-gradient(circle, #00ccff, #1e00ff, #00b3ff, #00e76c);
-    background-size: 500% 500%;
+    animation: gradientMove 30s ease infinite;
+    background: linear-gradient(45deg, #00ccff, #00ff40, #00b3ff, #00e76c);
+    background-size: 300% 300%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@ body {
 }
   
 .container {
-    background: radial-gradient(circle, #00ccff, #1e00ff, #00b3ff, #00e76c); /* Same gradient */
+    background: linear-gradient(45deg, #00ccff, #00ff40, #00b3ff, #00e76c); /* Same gradient */
     background-size: 500% 500%; /* Same background size */
     animation: gradientMove 20s ease infinite; /* Apply the same animation */
     width: 100vw;
@@ -103,6 +103,7 @@ body {
     justify-content: center;
     flex-direction: column;
     border-radius: 0.6em;
+    background: transparent;
 }
   
 #user-input-section {
