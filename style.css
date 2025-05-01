@@ -6,20 +6,19 @@
   
   body {
     height: 100vh;
-    /* Removed the background image to use the gradient for the whole page */
-    background-color: #000;
-    animation: gradientMove 10s ease infinite;
-    background: linear-gradient(135deg, #1100ff, #00ff88, #0095ff, #00e73a);
-    background-size: 600% 600%;
-    background-position: center;
-    background-repeat: no-repeat;
+    animation: gradientMove 20s ease infinite;
+    background: radial-gradient(circle, #00ccff, #1e00ff, #00b3ff, #00e76c);
+    background-size: 500% 500%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
   }
   
   .container {
-    background-color: #f8f8f8; /* Just the solid color now */
+    background: radial-gradient(circle, #00ccff, #1e00ff, #00b3ff, #00e76c); /* Same gradient */
+    background-size: 500% 500%; /* Same background size */
+    animation: gradientMove 20s ease infinite; /* Apply the same animation */
     width: 100vw;
     max-width: 50em;
     height: 30vw;
@@ -27,7 +26,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: relative; /* Made relative so it stays in the right position */
+    position: relative;
     padding: 3em;
     box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
   }
@@ -247,14 +246,8 @@
   }
   
   @keyframes gradientMove {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
   
