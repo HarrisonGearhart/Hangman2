@@ -131,7 +131,7 @@ const generateWord = (optionValue) => {
     if (button.innerText === optionValue) {
       button.classList.add("active");
     }
-    //button.disabled = true;
+    button.disabled = true;
   });
 
   //initially hide letters, clear previous word
