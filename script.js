@@ -128,7 +128,7 @@ const generateWord = (optionValue) => {
   let optionsButtons = document.querySelectorAll(".options");
   //If optionValur matches the button innerText then highlight the button
   optionsButtons.forEach((button) => {
-    if (button.innerText === optionValue) {
+    if (button.innerText.toLowerCase() === optionValue.toLowerCase()) {
       button.classList.add("active");
     }
     button.disabled = true;
