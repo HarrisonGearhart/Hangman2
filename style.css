@@ -65,6 +65,13 @@ body {
     color: #808080;
     background-color: #efefef;
 }
+
+#letter-container button:disabled {
+    background-color: #888888;  /* Darker grey */
+    color: #ffffff;             /* White text */
+    border: 2px solid #555555;  /* Optional: Darker border */
+}
+
   
 #options-container button.active {
     background-color: lightblue;
