@@ -8,9 +8,9 @@
     height: 100vh;
     /* Removed the background image to use the gradient for the whole page */
     background-color: #000;
-    animation: gradientMove 20s ease infinite;
+    animation: gradientMove 10s ease infinite;
     background: linear-gradient(135deg, #1100ff, #00ff88, #0095ff, #00e73a);
-    background-size: 400% 400%;
+    background-size: 600% 600%;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
