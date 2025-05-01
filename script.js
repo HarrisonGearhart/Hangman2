@@ -10,7 +10,7 @@ const resultText = document.getElementById("result-text");
 
 //Options values for buttons
 let options = {
-  Landmarks: [
+  landmarks: [
     "Roman Colosseum",
     "Grand Canyon",
     "Hollywood Sign",
@@ -36,7 +36,7 @@ let options = {
     "Louvre Museum",
   ],
 
-  Activities: [
+  activities: [
     "Hiking",
     "Fishing",
     "Ziplining",
