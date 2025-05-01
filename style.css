@@ -51,7 +51,7 @@ body {
   
 #options-container button {
     padding: 0.6em 1.2em;
-    border: 3px solid #000000;
+    border: 3px solid #ffffff;
     background-color: #ffffff;
     color: #000000;
     border-radius: 0.3em;
@@ -75,7 +75,7 @@ body {
   
 #options-container button.active {
     background-color: lightblue;
-    border: 3px solid #000000;
+    border: 3px solid #ffffff;
     color: #000000;
 }
   
