@@ -2,9 +2,9 @@
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
-  }
+}
   
-  body {
+body {
     height: 100vh;
     animation: gradientMove 20s ease infinite;
     background: radial-gradient(circle, #00ccff, #1e00ff, #00b3ff, #00e76c);
@@ -13,9 +13,9 @@
     justify-content: center;
     align-items: center;
     margin: 0;
-  }
+}
   
-  .container {
+.container {
     background: radial-gradient(circle, #00ccff, #1e00ff, #00b3ff, #00e76c); /* Same gradient */
     background-size: 500% 500%; /* Same background size */
     animation: gradientMove 20s ease infinite; /* Apply the same animation */
@@ -29,9 +29,9 @@
     position: relative;
     padding: 3em;
     box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
-  }
+}
   
-  #options-container {
+#options-container {
     text-align: center;
     margin-top: 10%;
     margin-right: 445px;
@@ -40,16 +40,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
   
-  #options-container div {
+#options-container div {
     width: 75%;
     display: inline-grid;
     justify-content: space-between;
     margin: 0.6em 0 1.2em 37%;
-  }
+}
   
-  #options-container button {
+#options-container button {
     padding: 0.6em 1.2em;
     border: 3px solid #000000;
     background-color: #ffffff;
@@ -58,29 +58,29 @@
     text-transform: capitalize;
     cursor: pointer;
     margin: 0.3em 0;
-  }
+}
   
-  #options-container button:disabled {
+#options-container button:disabled {
     border: 3px solid #808080;
     color: #808080;
     background-color: #efefef;
-  }
+}
   
-  #options-container button.active {
+#options-container button.active {
     background-color: lightblue;
     border: 3px solid #000000;
     color: #000000;
-  }
+}
   
-  .letter-container {
+.letter-container {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.6em;
-  }
+}
   
-  #letter-container button {
+#letter-container button {
     position: initial;
     height: 2.4em;
     width: 2.4em;
@@ -90,9 +90,9 @@
     line-height: 1.2;
     margin: 0.3em;
     box-sizing: border-box;
-  }
+}
   
-  .new-game-popup {
+.new-game-popup {
     position: absolute;
     left: 0;
     top: 0;
@@ -103,9 +103,9 @@
     justify-content: center;
     flex-direction: column;
     border-radius: 0.6em;
-  }
+}
   
-  #user-input-section {
+#user-input-section {
     display: flex;
     position: absolute;
     justify-content: right;
@@ -117,9 +117,9 @@
     left: 75%;
     top: 65%;
     right: auto;
-  }
+}
   
-  canvas {
+canvas {
     display: flex;
     position: absolute;
     right: 5%;
@@ -127,127 +127,126 @@
     margin-right: 20px;
     border: 10px solid #1923e6;
     border-radius: 10px;
-  }
+}
   
-  .hide {
+.hide {
     display: none;
-  }
+}
   
-  #result-text h2 {
+#result-text h2 {
     font-size: 1.8em;
     text-align: center;
-  }
+}
   
-  #result-text p {
+#result-text p {
     font-size: 1.25em;
     margin: 1em 0 2em 0;
-  }
+}
   
-  #result-text span {
+#result-text span {
     font-weight: 600;
-  }
+}
   
-  #new-game-button {
+#new-game-button {
     font-size: 1.25em;
     padding: 0.5em 1em;
     background-color: #4e86b7;
-    border: 3px solid #000000;
+    border: 3px solid #4e86b7;
     color: #fff;
     border-radius: 0.2em;
     cursor: pointer;
-  }
+}
   
-  .win-msg {
+.win-msg {
     color: #05703e;
-  }
+}
   
-  .lose-msg {
+.lose-msg {
     color: #b61212;
-  }
+}
   
-  .dashes.space {
+.dashes.space {
     display: inline-block;
     width: 20px;
     text-align: center;
-  }
+}
   
-  /* Media Queries for Responsiveness */
-  @media (max-width: 768px) {
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
     .container {
-      width: 90vw;
-      height: auto;
-      padding: 2em;
-      position: relative;
-      transform: none;
-      top: auto;
-      left: auto;
-      box-sizing: border-box;
+        width: 90vw;
+        height: auto;
+        padding: 2em;
+        position: relative;
+        transform: none;
+        top: auto;
+        left: auto;
+        box-sizing: border-box;
     }
-  
+
     #options-container {
-      margin: 1em auto;
-      margin-right: 0;
-      font-size: 1em;
-      width: 100%;
+        margin: 1em auto;
+        margin-right: 0;
+        font-size: 1em;
+        width: 100%;
     }
-  
+
     #options-container div {
-      margin: 0 auto;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     #letter-container {
-      gap: 0.4em;
-      justify-content: center;
+        gap: 0.4em;
+        justify-content: center;
     }
-  
+
     #letter-container button {
-      width: 2em;
-      height: 2em;
-      font-size: 1em;
+        width: 2em;
+        height: 2em;
+        font-size: 1em;
     }
-  
+
     #user-input-section {
-      position: static;
-      transform: none;
-      margin: 1em auto;
-      font-size: 1.5em;
-      max-width: 100%;
-      text-align: center;
+        position: static;
+        transform: none;
+        margin: 1em auto;
+        font-size: 1.5em;
+        max-width: 100%;
+        text-align: center;
     }
-  
+
     canvas {
-      position: static;
-      margin: 1em auto;
-      display: block;
-      max-width: 100%;
-      height: auto;
+        position: static;
+        margin: 1em auto;
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
-  
+
     #new-game-container {
-      padding: 1em;
+        padding: 1em;
     }
-  
+
     #result-text h2 {
-      font-size: 1.5em;
+        font-size: 1.5em;
     }
-  
+
     #result-text p {
-      font-size: 1em;
+        font-size: 1em;
     }
-  
+
     #new-game-button {
-      font-size: 1em;
-      padding: 0.5em 1em;
+        font-size: 1em;
+        padding: 0.5em 1em;
     }
-  }
-  
-  @keyframes gradientMove {
+}
+
+@keyframes gradientMove {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
-  }
-  
+}
