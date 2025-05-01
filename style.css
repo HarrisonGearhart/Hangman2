@@ -165,3 +165,78 @@
     width: 20px;
     text-align: center;
   }
+/* Media Queries for Responsiveness */
+
+  @media (max-width: 768px) {
+    .container {
+      width: 90vw;
+      height: auto;
+      padding: 2em;
+      position: relative;
+      transform: none;
+      top: auto;
+      left: auto;
+      box-sizing: border-box;
+    }
+  
+    #options-container {
+      margin: 1em auto;
+      margin-right: 0;
+      font-size: 1em;
+      width: 100%;
+    }
+  
+    #options-container div {
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #letter-container {
+      gap: 0.4em;
+      justify-content: center;
+    }
+  
+    #letter-container button {
+      width: 2em;
+      height: 2em;
+      font-size: 1em;
+    }
+  
+    #user-input-section {
+      position: static;
+      transform: none;
+      margin: 1em auto;
+      font-size: 1.5em;
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    canvas {
+      position: static;
+      margin: 1em auto;
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  
+    #new-game-container {
+      padding: 1em;
+    }
+  
+    #result-text h2 {
+      font-size: 1.5em;
+    }
+  
+    #result-text p {
+      font-size: 1em;
+    }
+  
+    #new-game-button {
+      font-size: 1em;
+      padding: 0.5em 1em;
+    }
+  }
+  
