@@ -241,9 +241,27 @@ canvas {
     }
 
     #new-game-button {
-        font-size: 1em;
-        padding: 0.5em 1em;
+        font-size: 1.3em;
+        padding: 0.65em 1.25em;
     }
+
+    .new-game-popup:not(.hide) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 25vh;
+        padding: 2em;
+        box-sizing: border-box;
+      }
+    
+      #result-text {
+        text-align: center;
+      }
+    
+      #new-game-button {
+        margin-top: 1em;
+      }
 }
 
 @keyframes gradientMove {
