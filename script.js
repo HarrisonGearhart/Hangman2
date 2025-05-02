@@ -439,7 +439,7 @@ const initializer = () => {
             dashes[index].innerText = char;
             winCount += 1;
             if (winCount == chosenWord.replace(/ /g, "").length) {
-              resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+              resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The correct answer was <span>${chosenWord}</span></p>`;
 
               // Just hide the options and letter buttons (no background change)
               optionsContainer.style.display = "none";
@@ -454,7 +454,7 @@ const initializer = () => {
         count += 1;
         drawMan(count);
         if (count == 6) {
-          resultText.innerHTML = `<h2 class='lose-msg'>You Lose!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+          resultText.innerHTML = `<h2 class='lose-msg'>You Lose!!</h2><p>The correct answer was <span>${chosenWord}</span></p>`;
 
           // Hide the options and letter buttons (no background change)
           optionsContainer.style.display = "none";
