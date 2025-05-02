@@ -3,7 +3,7 @@
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
-
+  
 body {
     height: 100vh;
     animation: gradientMove 30s ease infinite;
@@ -14,50 +14,41 @@ body {
     align-items: center;
     margin: 0;
 }
-
+  
 .container {
-    background: linear-gradient(45deg, #00ccff, #00ff40, #00b3ff, #00e76c);
-    background-size: 500% 500%;
-    animation: gradientMove 20s ease infinite;
+    background: linear-gradient(45deg, #00ccff, #00ff40, #00b3ff, #00e76c); /* Same gradient */
+    background-size: 500% 500%; /* Same background size */
+    animation: gradientMove 20s ease infinite; /* Apply the same animation */
     width: 100vw;
     max-width: 50em;
-    height: 90vh;
+    height: 30vw;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 1em 2em;
+    padding: 3em;
     box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
-    box-sizing: border-box;
 }
-
+  
 #options-container {
-    width: 100%;
     text-align: center;
+    margin-top: 10%;
+    margin-right: 445px;
     font-size: 20px;
     font-weight: bold;
-    position: absolute;
-    top: 1em;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5em;
 }
-
-#options-container h3 {
-    margin-bottom: 0.5em;
-}
-
+  
 #options-container div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
+    width: 75%;
+    display: inline-grid;
+    justify-content: space-between;
+    margin: 0.6em 0 1.2em 37%;
 }
-
+  
 #options-container button {
     padding: 0.6em 1.2em;
     border: 3px solid #ffffff;
@@ -66,42 +57,38 @@ body {
     border-radius: 0.3em;
     text-transform: capitalize;
     cursor: pointer;
-    min-width: 100px;
+    margin: 0.3em 0;
 }
-
+  
 #options-container button:disabled {
     border: 3px solid #808080;
     color: #808080;
     background-color: #efefef;
 }
 
+#letter-container button:disabled {
+    background-color: #888888;  /* Darker grey */
+    color: #ffffff;             /* White text */
+    border: 2px solid #555555;  /* Optional: Darker border */
+}
+
+  
 #options-container button.active {
     background-color: lightblue;
     border: 3px solid #ffffff;
     color: #000000;
 }
-
-canvas {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 10px solid #1923e6;
-    border-radius: 10px;
-    display: block; /* Make sure canvas is displayed */
-}
-
+  
 .letter-container {
-    position: absolute;
-    bottom: 2em;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.6em;
 }
-
+  
 #letter-container button {
+    position: initial;
     height: 2.4em;
     width: 2.4em;
     border-radius: 0.3em;
@@ -111,13 +98,7 @@ canvas {
     margin: 0.3em;
     box-sizing: border-box;
 }
-
-#letter-container button:disabled {
-    background-color: #888888;
-    color: #ffffff;
-    border: 2px solid #555555;
-}
-
+  
 .new-game-popup {
     position: absolute;
     left: 0;
@@ -131,38 +112,49 @@ canvas {
     border-radius: 0.6em;
     background: transparent;
 }
-
+  
 #user-input-section {
-    position: absolute;
-    top: 78%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.8em;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    text-align: center;
+    position: absolute;
+    justify-content: right;
+    font-size: 1.8em;
+    margin: 0.6em 0 1.2em 0;
+    margin-right: 20px;
+    transform: translate(-50%, -50%);
+    max-width: calc(100% - 300px);
+    left: 75%;
+    top: 65%;
+    right: auto;
 }
-
+  
+canvas {
+    display: flex;
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    margin-right: 20px;
+    border: 10px solid #1923e6;
+    border-radius: 10px;
+}
+  
 .hide {
     display: none;
 }
-
+  
 #result-text h2 {
     font-size: 1.8em;
     text-align: center;
 }
-
+  
 #result-text p {
     font-size: 1.25em;
     margin: 1em 0 2em 0;
 }
-
+  
 #result-text span {
     font-weight: 600;
 }
-
+  
 #new-game-button {
     font-size: 1.25em;
     padding: 0.5em 1em;
@@ -172,26 +164,26 @@ canvas {
     border-radius: 0.2em;
     cursor: pointer;
 }
-
+  
 .win-msg {
     color: #05703e;
 }
-
+  
 .lose-msg {
     color: #b61212;
 }
-
+  
 .dashes.space {
     display: inline-block;
     width: 20px;
     text-align: center;
 }
- 
+  
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .container {
         width: 90vw;
-        height: 90vw;
+        height: auto;
         padding: 2em;
         position: relative;
         transform: none;
