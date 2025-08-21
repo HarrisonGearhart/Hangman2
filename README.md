@@ -1,6 +1,6 @@
 # 🎮 Hangman Game
 
-🔗 [Live Demo →](https://harrisongearhart.github.io/Hangman2/)
+🔗 [Live Demo→](https://harrisongearhart.github.io/Hangman2/)
 
 A modern, category-based **Hangman** game built with **HTML**, **Flexbox CSS**, and **Vanilla JavaScript**. Designed to be fast, intuitive, and visually dynamic.
 
@@ -47,9 +47,9 @@ A modern, category-based **Hangman** game built with **HTML**, **Flexbox CSS**, 
 
 ## 💻 Project Structure
 
-├── index.html # Game markup and structure
-├── style.css # Styling, Flexbox layout, media queries
-└── script.js # JavaScript game logic and canvas rendering
+index.html # Game markup and structure
+style.css # Styling, Flexbox layout, media queries
+script.js # JavaScript game logic and canvas rendering
 
 
 ---
